@@ -1,0 +1,47 @@
+{
+  "folders": [
+    { "path": ".." },
+    { "path": "../controlboard" },
+  ],
+  "settings": {
+    "editor.rulers": [96, 100],
+    "editor.detectIndentation": false,
+    "editor.tabSize": 2,
+    "editor.minimap.maxColumn": 90,
+    "editor.formatOnPaste": false,
+    "editor.formatOnType": false,
+    "editor.formatOnSave": false,
+    "editor.renderWhitespace": "all",
+    "editor.fontLigatures": true,
+    "editor.renderControlCharacters": true,
+    "editor.tabCompletion": "on",
+    "workbench.colorCustomizations": {
+      "titleBar.activeBackground": "#644100",
+      "titleBar.inactiveBackground": "#3d2800",
+      "titleBar.activeForeground": "#e7e7e7",
+      "titleBar.inactiveForeground": "#e7e7e799"
+    },
+    "workbench.settings.editor": "json",
+    "workbench.iconTheme": "vscode-icons",
+    "files.autoSave": "onFocusChange",
+    "files.trimTrailingWhitespace": true,
+    "files.watcherExclude": {
+      "**/.git/objects/**": true,
+      "**/.git/subtree-cache/**": true,
+      "**/node_modules/*/**": true
+    },
+    "explorer.autoReveal": true,
+    "git.ignoreLimitWarning": true,
+    "breadcrumbs.enabled": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "files.associations": {
+      "mpu6050-fifo.h": "c",
+      "array": "cpp",
+      "iterator": "cpp",
+      "string": "cpp",
+      "string_view": "cpp",
+      "vector": "cpp",
+      "functional": "cpp"
+    }
+  }
+}
