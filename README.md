@@ -5,6 +5,15 @@ In tribute to https://en.wikipedia.org/wiki/Roman_Ingarden
 
 
 
+## Taśma led biała
+
+Jeśli biała to dopasować spektrum taśmy do chlorofilu. Taśma kanlux L60 ma dopasowane spektrum
+
+1. Kanlux L60
+   1. Np tu: https://allegro.pl/oferta/kanlux-tasma-led-l60-11w-m-12v-biala-neutralna-5m-12024477473?bi_s=ads&bi_m=listing:desktop:query&bi_c=MzdjNWY5YjQtNTI3Ni00NjZjLWEzMzUtYmRlMDQzOGRkNzVkAA&bi_t=ape&referrer=proxy&emission_unit_id=67477aee-d1df-499b-bda5-1b5068010afe
+
+
+
 ## Oświetlenie, wersja z taśmą [PL]
 
 Elementy na pewno:
