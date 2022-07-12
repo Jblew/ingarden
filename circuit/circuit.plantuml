@@ -1,0 +1,63 @@
+@startuml circuit
+
+state PowerSupplyTerminal {
+  state "GND" as psOutGND <<exitPoint>>
+  state "12V" as psOut12V <<exitPoint>>
+}
+
+state VoltageConverter {
+  state "GND" as vcInGND <<entryPoint>>
+  state "12V" as vcIn12V <<entryPoint>>
+  state "GND" as vcOutGND <<exitPoint>>
+  state "5V" as vcOut5V <<exitPoint>>
+}
+
+psOutGND ---> vcInGND
+psOut12V ---> vcIn12V
+
+state BluePillSTM32F103 {
+  state "GND" as bpInGND <<entryPoint>>
+  state "5V" as bpIn5V <<entryPoint>>
+  state "3V3" as bpOut3V3 <<exitPoint>>
+  state "PA1 pin 11" as bpOutPWM <<exitPoint>>
+  state "PA2 (TX2)  \n pin 12  " as bpOutTX <<exitPoint>>
+  state "PA3 (RX2)  \n pin 13  " as bpOutRX <<exitPoint>>
+}
+
+vcOutGND ---> bpInGND
+vcOut5V ---> bpIn5V
+
+state GPSModule {
+  state "GND" as gmInGND <<entryPoint>>
+  state "3V3" as gmIn3V3 <<entryPoint>>
+  state "RX" as gmInRX <<entryPoint>>
+  state "TX" as gmInTX <<entryPoint>>
+}
+
+psOutGND ---> gmInGND
+bpOut3V3 ---> gmIn3V3
+bpOutTX ---> gmInTX
+bpOutRX ---> gmInRX
+
+state PWMAmplifier {
+  state "GND sig" as paInSigGND <<entryPoint>>
+  state "GND" as paInGND <<entryPoint>>
+  state "12V" as paIn12V <<entryPoint>>
+  state "PWM in" as paInPWN <<entryPoint>>
+  state "OE output" as paOutOE <<exitPoint>>
+}
+
+psOutGND ---> paInGND
+psOutGND ---> paInSigGND
+psOut12V ---> paIn12V
+bpOutPWM ---> paInPWN
+
+state LEDOutputTerminal {
+  state "GND" as lotInGND <<entryPoint>>
+  state "12V" as lotIn12V <<entryPoint>>
+}
+
+paOutOE ---> lotInGND
+psOut12V ---> lotIn12V
+
+@enduml

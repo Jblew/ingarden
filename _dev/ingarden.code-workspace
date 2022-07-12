@@ -42,6 +42,9 @@
       "string_view": "cpp",
       "vector": "cpp",
       "functional": "cpp"
-    }
+    },
+    "plantuml.exportFormat": "svg",
+    "plantuml.exportSubFolder": false,
+    "plantuml.exportOutDir": "."
   }
 }

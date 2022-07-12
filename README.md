@@ -5,6 +5,24 @@ In tribute to https://en.wikipedia.org/wiki/Roman_Ingarden
 
 
 
+## Podłączenie elektryczne v2
+
+- Myśl instead of czas
+  - Jeśli wymyślę dobry sposób podłączania elektrycznego to zaoszczędzę też czas w przyszłych projektach
+- Podstawy
+  - Cieńszy i giętszy kabel — obliczyć straty
+  - Lutowanie lub przykręcanie złącza na końcówkach
+  - Podłączanie adaptera led do złączki na kablu
+- Straty
+  - Długość: 3m czyli w obie strony 6m
+  - Max moc taśm: 0,5m x 6 taśm x 14,4w/m = 43,2w
+  - Przy 12v natężenie (P=IxU => I=P/U) I = 43,2/12 = 3,6A
+  - Przewód 0,75mm2 przy 6m opór 0.1368ohm czyli straty: 0.0684*3,6=0,49248W
+  - Przewód 0,5mm2 przy 6m opór 0.2052ohm czyli straty: 0.2052*3,6=0,73W
+  - Przewód 0,25mm2 przy 6m opór 0.2052ohm czyli straty: 0.4104*3,6=1,47W = 3,5%
+
+
+
 ## Taśma led biała
 
 Jeśli biała to dopasować spektrum taśmy do chlorofilu. Taśma kanlux L60 ma dopasowane spektrum
