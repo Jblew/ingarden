@@ -1,0 +1,33 @@
+@startsalt din-placement
+{!
+  {Overcurrent
+  switch} |
+  {12V
+  power supply} |
+  {12V->5V USB
+  converter} |
+  {GPS module} |
+  {Blue pill
+  STM32F103} |
+  {PWM OE
+  module}
+
+  ... | ... | ... | ... | ...
+
+  {18mm
+  1mod} |
+  {78mm
+  4mod} |
+  {30mm
+  2mod} |
+  {50mm
+  3mod} |
+  {36mm
+  2mod} |
+  {36mm
+  2mod} |
+  "= 14mod"
+
+
+}
+@endsalt

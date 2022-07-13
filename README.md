@@ -3,7 +3,24 @@ Interior garden on metal wall-mounted rack
 
 In tribute to https://en.wikipedia.org/wiki/Roman_Ingarden
 
+## Hardware
 
+- Instructions on uploading code to STM32F104 Blue Pill are in [controlboard/README.md](controlboard/README.md)
+
+Block diagram:
+![Ingarden hardware block diagram](./circuit/circuit.svg)
+> Block diagram generated with PlantUML in `circuit/circuit.plantuml` file
+
+
+
+## DIN box
+
+![Din box placement](./circuit/din-placement.svg)
+> Placement and width of the components on the DIN bus
+
+
+
+# Notes
 
 ## Podłączenie elektryczne v2
 
