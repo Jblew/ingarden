@@ -31,6 +31,14 @@ DIN parts to order:
 
 
 
+### PWM Module
+
+![Module wiring](circuit/LR7843-MOSFET-Control-Module-Schematic.jpeg)
+
+> The PC817-LR7843 module wiring. Source: https://protosupplies.com/product/lr7843-mosfet-control-module/
+
+
+
 ### Firmware
 
 - Instructions on uploading code to STM32F104 Blue Pill are in [controlboard/README.md](controlboard/README.md)

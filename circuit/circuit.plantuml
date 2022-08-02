@@ -1,6 +1,11 @@
 @startuml circuit
 
-state PowerSupplyTerminal {
+skinparam state {
+  BackgroundColor white
+  BackgroundColor<<done>> green
+}
+
+state PowerSupplyTerminal <<done>> {
   state "GND" as psOutGND <<exitPoint>>
   state "12V" as psOut12V <<exitPoint>>
 }
